@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    tools:context=".fragment.LikeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_margin="20dp"
+        android:id="@+id/search"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#080808"
+        android:textColor="#080808"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edit_text"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawableRight="@drawable/ic_search"
+        android:paddingRight="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyle"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/search"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+
+</FrameLayout>
